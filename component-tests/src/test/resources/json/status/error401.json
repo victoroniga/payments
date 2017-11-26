@@ -1,0 +1,5 @@
+{
+  "operation": "ERROR",
+  "reason": "You are unauthorized to access this API",
+  "errorCode": "UNAUTHORIZED"
+}

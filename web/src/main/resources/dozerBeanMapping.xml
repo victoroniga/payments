@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <configuration>
+        <stop-on-errors>true</stop-on-errors>
+        <date-format>MM/dd/yyyy HH:mm</date-format>
+        <wildcard>true</wildcard>
+    </configuration>
+
+    <mapping map-id="short-version-payment">
+        <class-a>tech.form3.payments.ejb.model.Payment</class-a>
+        <class-b>tech.form3.payments.ejb.model.Payment</class-b>
+        <field map-id="short-version-attributes">
+            <a>attributes</a>
+            <b>attributes</b>
+        </field>
+        <field-exclude>
+            <a>organizationId</a>
+            <b>organizationId</b>
+        </field-exclude>
+    </mapping>
+
+    <mapping map-id="short-version-attributes">
+        <class-a>tech.form3.payments.ejb.model.PaymentAttributes</class-a>
+        <class-b>tech.form3.payments.ejb.model.PaymentAttributes</class-b>
+        <field-exclude>
+            <a>fx</a>
+            <b>fx</b>
+        </field-exclude>
+        <field-exclude>
+            <a>chargesInformation</a>
+            <b>chargesInformation</b>
+        </field-exclude>
+        <field-exclude>
+            <a>beneficiary</a>
+            <b>beneficiary</b>
+        </field-exclude>
+        <field-exclude>
+            <a>debtor</a>
+            <b>debtor</b>
+        </field-exclude>
+        <field-exclude>
+            <a>endToEndReference</a>
+            <b>endToEndReference</b>
+        </field-exclude>
+        <field-exclude>
+            <a>numericReference</a>
+            <b>numericReference</b>
+        </field-exclude>
+        <field-exclude>
+            <a>paymentPurpose</a>
+            <b>paymentPurpose</b>
+        </field-exclude>
+        <field-exclude>
+            <a>reference</a>
+            <b>reference</b>
+        </field-exclude>
+        <field-exclude>
+            <a>schemePaymentSubType</a>
+            <b>schemePaymentSubType</b>
+        </field-exclude>
+        <field-exclude>
+            <a>schemePaymentType</a>
+            <b>schemePaymentType</b>
+        </field-exclude>
+        <field-exclude>
+            <a>sponsor</a>
+            <b>sponsor</b>
+        </field-exclude>
+    </mapping>
+
+</mappings>
